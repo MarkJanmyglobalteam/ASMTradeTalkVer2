@@ -1,0 +1,53 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">Sign Up</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-avatar>
+                    <span class="ion-alert-circled"></span>
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item class="backg line_col">
+                    <ion-label floating color="primary">Email</ion-label>
+                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+                </ion-item>
+                <ion-item class="backg line_col">
+                    <ion-label floating color="primary">Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <button ion-button full class="btnclr" (click)="signup(user)">Sign Up via Email</button>
+            </ion-col>
+        </ion-row>
+
+        <h6 class="or">-Or-</h6>
+
+        <ion-row>
+            <button ion-button full icon-start color="facebook" (click)="facebookLogin()">
+              <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+              Continue with Facebook 
+            </button>
+
+
+            <button ion-button full icon-start color="twitter" (click)="twitterLogin()">
+              <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
+              Continue with Twitter
+            </button>
+
+            <button ion-button full icon-start color="google" (click)="googleLogin()">Continue with Google</button>
+        </ion-row>
+    </ion-grid>
+</ion-content>

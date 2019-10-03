@@ -1,0 +1,23 @@
+topmovers{
+	/*.child-tabsize{
+	}*/
+	#top_movers .tabbar{
+		top: 0.90rem !important;
+		min-height: 4rem !important;
+		width: 70%;
+		margin-left: 15%;
+		border-radius: 20px;
+		
+ 		.tab-button{
+			min-height: 4rem !important;
+			border-radius: 0px 0px 0px 20px;
+		}
+	}
+	.tabs-md .tab-button[aria-selected=true]{
+ 			border-bottom:solid medium #43B3F0 !important;
+ 		}
+}
+/* .ion-ios-arrow-dropup-outline:before,
+.ion-ios-arrow-dropdown-outline:before{
+	color:#BEBCBD; 
+}*/

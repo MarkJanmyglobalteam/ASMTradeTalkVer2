@@ -1,0 +1,19 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">Chat</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+    <ion-list>
+        <ion-item class="backg asx-col" *ngFor="let news of NewsEntry">
+
+            <h2>{{news.NewsName}}</h2>
+            <p>{{news.NewsDesc}}</p>
+            <p class="newsdate">{{news.NewsDate}}</p>
+        </ion-item>
+
+    </ion-list>
+</ion-content>

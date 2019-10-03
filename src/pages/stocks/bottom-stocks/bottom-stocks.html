@@ -1,0 +1,15 @@
+
+<ion-content padding class="backg">
+  <ion-grid>
+	  <ion-row class="backg asx-col" *ngFor="let bottomstock of bottomStocks">
+	        <ion-col col-8 class="stocknumbers">
+	          <h2>{{bottomstock.abv}}</h2>
+	          <p>{{bottomstock.name}}</p>
+	        </ion-col>
+	        <ion-col class="stocknumbers">
+	          <h2>{{bottomstock.totalstocks}}</h2>
+	          <p class="stock_counts">{{bottomstock.range}}</p>
+	        </ion-col>
+	  </ion-row>
+	</ion-grid>
+</ion-content>

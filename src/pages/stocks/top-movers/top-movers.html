@@ -1,0 +1,21 @@
+
+<ion-header class="asxtitle">
+  <ion-navbar>
+    <ion-title>
+      <h4 class="title">Top Movers</h4>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+<ion-list>
+  <ion-tabs id="top_movers" class="child-tabsize" tabsPlacement="top" >
+    <ion-tab [root]="TopStocksTab" tabTitle="Top 6 Stocks"></ion-tab>
+     <!--tabIcon="ios-arrow-dropup-outline" -->
+    <ion-tab [root]="BottomStocksTab" tabTitle="Bottom 6 Stocks">
+      <!-- tabIcon="ios-arrow-dropdown-outline" -->
+    </ion-tab>
+
+  </ion-tabs>
+</ion-list>
+</ion-content>

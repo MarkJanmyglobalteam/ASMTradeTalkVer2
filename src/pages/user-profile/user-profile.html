@@ -1,0 +1,65 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">User Profile</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+    <ion-list class="userImage backg asx-col">
+
+
+        <div class="profile-image">
+            <img src="{{imageurl}}">
+        </div>
+        <div>
+            <button ion-button round outline (click)="chooseimage()">Choose an image</button>
+        </div>
+        <div [hidden]="!moveon">
+            <button ion-button round outline (click)="proceed()"></button>
+        </div>
+        <div [hidden]="moveon">
+            <button ion-button round outline (click)="updateproceed()">Upload & proceed</button>
+        </div>
+
+    </ion-list>
+
+    <ion-list class=" backg asx-col userTextData">
+
+        <ion-label>
+            <ion-item class="backg line_col">
+                <ion-label floating color="primary">Last Name</ion-label>
+                <ion-input type="text" minlength="1" [(ngModel)]="profile.lastname"></ion-input>
+            </ion-item>
+        </ion-label>
+
+        <ion-label>
+            <ion-item class="backg line_col">
+                <ion-label floating color="primary">First Name</ion-label>
+
+                <ion-input type="text" required minlength="1" [(ngModel)]="profile.firstname"></ion-input>
+
+            </ion-item>
+        </ion-label>
+
+        <ion-label>
+            <ion-item class="backg line_col">
+                <ion-label floating color="primary">Address</ion-label>
+                <ion-input type="text" [(ngModel)]="profile.address"></ion-input>
+            </ion-item>
+        </ion-label>
+
+    </ion-list>
+
+    <ion-row>
+        <ion-col class="remove_padding">
+            <button ion-button full class="submitBtn" (click)="user_profile_update(profile)">Update</button>
+
+        </ion-col>
+    </ion-row>
+
+
+
+    <button ion-button full (click)="logout()">Signout</button>
+</ion-content>

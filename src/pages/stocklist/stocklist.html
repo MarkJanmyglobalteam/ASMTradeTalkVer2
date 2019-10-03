@@ -1,0 +1,80 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-buttons left>
+            <button ion-button menuToggle>
+              <ion-icon color = "primary"  name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>
+            <h4 class="title"> Stock List</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+
+  <!-- <ion-grid>
+      <ion-list class="backg asx-col" *ngFor="let stock of stocks" (click)="showStockPage()">
+          <ion-row>
+              <ion-col col-8 class="stocknumbers">
+                  <h2>{{ stock.symbol }}</h2>
+                  <p>{{ stock.name }}</p>
+
+              </ion-col>
+              <ion-col class="stocknumbers values ">
+                  <h2>23.06</h2>
+                  <p class="stock_counts">-0.02</p>
+              </ion-col>
+          </ion-row>
+          <ion-row > 
+            <button class="watchlistButton" ion-button icon-left clear small  (click)="watchlist(stock.symbol)"> -->
+
+    <ion-grid>
+        <ion-list class="backg asx-col" *ngFor="let stock of stocks">
+            <ion-row>
+                <ion-col col-8 class="stocknumbers">
+                    <h2>{{ stock.symbol }} </h2>
+                    <p>{{ stock.name }}</p>
+
+                </ion-col>
+                <ion-col class="stocknumbers values ">
+                    <h2>23.06</h2>
+                    <p class="stock_counts">-0.02</p>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <button class="watchlistButton viewBtn btnclr" ion-button icon-left primary medium (click)="showStockPage()">
+                <ion-icon name="eye"></ion-icon>
+                <div>View</div>
+              </button>
+                <button class="watchlistButton btnclr" ion-button icon-right secondary medium (click)="watchlist(stock.symbol)"><ion-icon name="ios-add-outline"></ion-icon> <div>Add to Watchlist</div></button>
+            </ion-row>
+
+
+
+
+        </ion-list>
+    </ion-grid>
+    <button *ngIf="!$completed" ion-button round (click)="loadStocks()">Load More</button>
+
+</ion-content>
+
+<!-- <ion-content padding class="backg">
+    <ion-grid>
+        <ion-row class="backg asx-col" *ngFor="let stock of stocks">
+            <ion-col col-8 class="stocknumbers">
+                <h2>{{stock.symbol}}</h2>
+                <p>{{stock.name}}</p>
+
+
+                <button ion-button full icon-start (click)="watchlist(stock.symbol)"> Watchlist</button>
+            </ion-col> -->
+<!-- <ion-col class="stocknumbers">
+                <h2>{{stock.data.open }}</h2>
+                <p class="stock_counts">{{stock.data.close || 'Fetching...'}}</p>
+            </ion-col> -->
+<!-- </ion-row>
+
+    </ion-grid>
+    <button *ngIf="!$completed" ion-button round (click)="loadStocks()">Load More</button> -->
+<!-- </ion-content> -->

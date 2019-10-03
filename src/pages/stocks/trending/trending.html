@@ -1,0 +1,51 @@
+
+<ion-header class="asxtitle">
+  <ion-navbar>
+    <ion-title>
+      <h4 class="title">Trending</h4>
+    </ion-title>
+    <ion-buttons end>
+      <button  ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+
+<ion-grid>
+  <ion-row class="backg asx-col" *ngFor="let trendingStock of trendingStocks">
+        <ion-col col-8 class="stocknumbers">
+          <h2>{{trendingStock.abv}}</h2>
+          <p>{{trendingStock.name}}</p>
+        </ion-col>
+        <ion-col class="stocknumbers">
+          <h2>{{trendingStock.totalstocks}}</h2>
+          <p style="color:#8ECF61">{{trendingStock.range}}</p>
+        </ion-col>
+  </ion-row>
+  <!-- <ion-row class="backg asx-col">
+        <ion-col col-8 class="stocknumbers">
+          <h2>AMD</h2>
+          <p>Advanced Micro Devices, Inc.</p>
+         </ion-col>
+        <ion-col class="stocknumbers">
+          <h2>12.90</h2>
+          <p class="stock_counts">▼ 1.35 (9.47%)</p>
+
+        </ion-col>
+  </ion-row>
+  <ion-row class="backg asx-col">
+        <ion-col col-8 class="stocknumbers">
+          <h2>NVDA</h2>
+          <p>NVIDIA Corporation</p>
+        </ion-col>
+        <ion-col class="stocknumbers">
+          <h2>194.00</h2>
+          <p class="stock_counts">▼ 4.68 (2.35%)</p>
+
+        </ion-col>
+  </ion-row> -->
+</ion-grid>
+</ion-content>

@@ -1,0 +1,34 @@
+page-stocklist {
+    .asxtitle{
+        .toolbar-content{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+    .watchlistButton{
+        padding: 0 5px !important;
+        margin: 0px 0px 5px 10px;
+       
+    }
+    .viewBtn{
+        margin-left: 0px !important;
+    }
+    .stocknumbers{
+        padding-bottom: 0;
+
+    }
+     .values{
+        text-align: right;
+    }
+
+    .btnclr {
+        background: $asxbuttoncolor;
+        text-align: $aligncenter;
+        color: $asxnormtextcolor;
+    }
+
+}

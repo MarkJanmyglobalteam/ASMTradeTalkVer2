@@ -1,0 +1,48 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <!-- <h4 class="title">Follow</h4> -->
+            <h4 class="title"> Stock List</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- <ion-content padding class="backg">
+    <ion-grid>
+        <ion-list class="backg asx-col" *ngFor="let stock of stocks" (click)="showStockPage(stock)">
+            <ion-row>
+                <ion-col col-8 class="stocknumbers">
+                    <h2>{{ stock.name }}</h2>
+
+                </ion-col>
+                <ion-col class="stocknumbers ">
+                    <h2>{{stock.data.close || 'Fetching...'}}</h2>
+                    <h2>{{stock.data.open || 'Fetching...'}}</h2>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </ion-grid>
+    <button *ngIf="!$completed" ion-button round (click)="loadStocks()">Load More</button>
+
+</ion-content> -->
+
+<ion-content padding class="backg">
+        <ion-grid>
+            <ion-row class="backg asx-col" *ngFor="let stock of stocks" (click)="showStockPage(stock)">
+                <ion-col col-8 class="stocknumbers">
+                    <h2>{{stock.symbol}}</h2>
+                    <p>{{stock.name}}</p>
+                </ion-col>
+                <ion-col class="stocknumbers" *ngIf="(stock.data.open) - (stock.data.close ) > 0">
+                    <h2>{{stock.data.open  || 'Fetching...' }}</h2>
+                    <p class="stock_counts" style="color:green">{{ (stock.data.open) - (stock.data.close )}}</p>
+                </ion-col>
+                <ion-col class="stocknumbers" *ngIf="(stock.data.open) - (stock.data.close ) < 0">
+                    <h2>{{stock.data.open || 'Fetching...' }}</h2>
+                    <p class="stock_counts">{{ (stock.data.open) - (stock.data.close )  }}</p>
+                </ion-col>
+            </ion-row>
+       
+        </ion-grid>
+        <button *ngIf="!$completed" ion-button round (click)="loadStocks()" style=" padding: 0.5rem 2.0rem !important;">Load More</button>
+    </ion-content>

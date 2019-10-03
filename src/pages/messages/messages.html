@@ -1,0 +1,38 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">Messages</h4>
+        </ion-title>
+            <ion-buttons end>
+                <button  ion-button (click)="addbuddy()">
+                  <ion-icon name="person-add"></ion-icon>
+                </button>
+              </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+    <ion-list>
+        <ion-item class="backg asx-col" *ngFor="let item of myrequests">
+            <ion-item class="backg">
+                <h4>{{item.firstname}}</h4>
+                <button ion-button color="secondary" (click)="accept(item)">
+                    <ion-icon name="checkmark"></ion-icon>
+                    ADD
+                  </button>
+                <button ion-button color="danger" (click)="ignore(item)">
+                    <ion-icon name="trash"></ion-icon>
+                    NOPE
+                  </button>
+            </ion-item>
+        </ion-item>
+
+        <ion-item class="backg asx-col" *ngFor="let item of myfriends" (click)="buddychat(item)">
+            <ion-avatar item-left>
+                <img src="https://i.vimeocdn.com/portrait/58832_300x300">
+                <!-- <img src="/assets/imgs/logo.png"> -->
+            </ion-avatar>
+            <h3>{{item.firstname}}</h3>
+        </ion-item>
+    </ion-list>
+</ion-content>

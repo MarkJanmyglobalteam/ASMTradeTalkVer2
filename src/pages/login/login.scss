@@ -1,0 +1,55 @@
+
+// login{
+// 	.line, .list-md{
+// 		border-bottom:solid thin #43B3F0 !important;
+// 	}
+// 	.btnclr{
+// 		background: $asxbuttoncolor;
+// 		text-align: $aligncenter;
+// 		color: $asxnormtextcolor;
+// 		padding: 20px !important;
+// 		width:100%;
+// 	}
+// 	input[type=text], input[type=password], .label .label-md{
+// 		color: $asxnormtextcolor;
+// 	}
+// 	.item-md.item-block .item-inner{
+// 	border-bottom:none !important;
+// 	}
+// 	.label .label-md{
+// 		color:$asxnormtextcolor;
+// 	}
+
+// }
+
+
+login {
+    .line,
+    .list-md .item-input:last-child {
+        border-bottom: solid thin #43B3F0 !important;
+    }
+    .btnclr {
+        background: $asxbuttoncolor;
+        text-align: $aligncenter;
+        color: $asxnormtextcolor;
+        padding: 20px !important;
+        width: 100%;
+    }
+    input[type=text],
+    input[type=password],
+    .label .label-md {
+        color: $asxnormtextcolor;
+    }
+    .item-md.item-block .item-inner {
+        border-bottom: none !important;
+    }
+    .label .label-md {
+        color: $asxnormtextcolor;
+    }
+    .or {
+        text-align: $aligncenter;
+        color: #f4f4f4;
+        padding: 5px;
+        size: 8px;
+    }
+}

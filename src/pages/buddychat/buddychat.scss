@@ -1,0 +1,45 @@
+page-buddychat {
+    .item-inner{
+		border: solid thin #FFF;
+		border-radius:15px;
+	}
+	.input-wrapper{
+        border: solid thin;
+        margin-left: 8px;
+        border-radius: 10px;
+	}
+	.asx-col{
+		border: none !important;
+    }
+    .receive{
+        float: left;
+    }
+    .sent{
+        float: right;
+    }
+
+	.label-md{
+        padding: 5px;
+        margin: 0px !important;
+	}
+
+	ion-label{
+		white-space: normal;
+    }
+    
+    .toolbar{
+        border-top: solid thin #BEBCBD;
+        color: #BEBCBD;
+    }
+
+    .receive{
+        width: fit-content;
+        clear: both;
+        float: left;
+    }
+    .sent{
+        width: fit-content;
+        clear: both;
+        float: right;
+    }
+}

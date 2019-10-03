@@ -1,0 +1,26 @@
+create-acc {
+    .btnclr {
+        background: $asxbuttoncolor;
+        text-align: $aligncenter;
+        color: $asxnormtextcolor;
+        padding: 20px !important;
+        width: 100%;
+    }
+    input[type=text],
+    input[type=password],
+    .list-md .item-input:last-child {
+        color: $asxnormtextcolor;
+    }
+    .item-md.item-block .item-inner {
+        border-bottom: none !important;
+    }
+    .label .label-md {
+        color: $asxnormtextcolor;
+    }
+    .or {
+        text-align: $aligncenter;
+        color: #f4f4f4;
+        padding: 10px;
+        size: 8px;
+    }
+}

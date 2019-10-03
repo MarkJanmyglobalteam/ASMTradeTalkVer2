@@ -1,0 +1,72 @@
+.asxtitle {
+    text-align: center;
+    color: $asxbluecolor;
+    border-bottom: solid 1px #43B3F0;
+}
+
+.backg {
+    background: $asxbackcolor;
+    padding: 0px;
+}
+
+.asx-col {
+    margin: 5px 0px 5px 0px;
+    color: $asxnormtextcolor;
+    border-bottom: solid thin #43B3F0 !important;
+    .stocknumbers {
+        p,
+        h2 {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    }
+}
+
+.line_col {
+    border-bottom: thin solid $asxbluecolor !important;
+}
+
+.list-md .item-input:last-child {
+    border-bottom: none !important;
+}
+
+.toolbar-background-md {
+    background: none;
+}
+
+.title {
+    margin-top: 5px !important;
+    color: $asxbluecolor;
+}
+
+.tabs-md .tabbar {
+    background: $asxtabbg;
+}
+
+.tabs-md .tab-button {
+    color: $asxnormtextcolor;
+}
+
+.grid {
+    padding: 0px;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+    border-bottom: solid thick #43B3F0;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: #BEBCBD;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: #43B3F0;
+}
+
+.ion-ios-chatboxes-outline:before,
+.ion-ios-stats-outline:before,
+.ion-ios-contact-outline:before,
+.ion-ios-notifications-outline:before,
+.ion-ios-chatboxes-outline:before {
+    color: #BEBCBD;
+}

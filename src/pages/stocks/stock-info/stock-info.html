@@ -1,0 +1,47 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">INTC</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backg">
+    <ion-grid class="stockdetailcontainer">
+        <ion-list class="backg asx-col">
+            <ion-row>
+                <ion-col col-8 class="stocknumbers">
+                    <h2>Stock Symbol</h2>
+                    <p>Stock Name</p>
+  
+                </ion-col>
+                <ion-col class="stocknumbers ">
+                    <h2>120.43</h2>
+                    <p class="stock_counts">0.54</p>
+                    
+                    <p><ion-icon name="eye"></ion-icon>120 Watchers</p>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </ion-grid>
+    <div id="container" style="display: block;"></div>
+    <ion-grid class="stockdetailcontainer" no-lines>
+        <ion-list class="backg asx-col" no-lines>
+                        <h2 class="announcement_title">Comments Section</h2>
+                        <ion-toolbar color="white" line>
+                                <ion-input type="textarea" [(ngModel)] = "commentSections.comments" placeholder="Write your comments ..."></ion-input>
+                                <ion-buttons end>
+                                  <button ion-button (click)="insertComment(commentSections)" >
+                                    <ion-icon name="send" color="primary"></ion-icon>
+                                  </button>
+                                </ion-buttons>
+                              </ion-toolbar>
+                    <ion-item class="backg asx-col" *ngFor="let comment of commentsRef$ | async">
+                        <h2>{{comment.commentsRef}} sample coments</h2>
+                        <!-- <p>{{news.NewsDesc}}</p>
+                        <p class="newsdate">{{news.NewsDate}}</p> -->
+                        <p><ion-icon class="icons" name="ios-thumbs-up-outline"> 110 </ion-icon><ion-icon class="icons" name="ios-share-outline"> 110</ion-icon><ion-icon class="icons" name="ios-chatbubbles-outline">20</ion-icon></p>
+                    </ion-item>
+        </ion-list>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header class="asxtitle">
+    <ion-navbar>
+        <ion-title>
+            <h4 class="title">Name of User</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="backg">
+    <ion-list>
+
+        <!--*ngFor="let msg of conversationList"-->
+        <ion-item class="backg asx-col" *ngFor="let msg of conversationList">
+            <ion-avatar item-start>
+                <img src="../assets/imgs/logo.png">
+            </ion-avatar>
+            <p>{{msg.msgContent}}
+            </p>
+            <p class="time_received">Time:{{msg.timeConversation}}
+            </p>
+        </ion-item>
+
+        <!--Test-->
+        <ion-item class="backg asx-col receive">
+            <ion-avatar item-start class="image">
+                <img src="../assets/imgs/logo.png">
+            </ion-avatar>
+            <p>test
+            </p>
+            <p class="time">Time:test
+            </p>
+        </ion-item>
+
+    </ion-list>
+</ion-content>

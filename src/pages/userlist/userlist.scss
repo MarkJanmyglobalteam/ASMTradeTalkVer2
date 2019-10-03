@@ -1,0 +1,42 @@
+page-userlist {
+    
+    .searchbar{
+        padding:0px!important;
+        .searchbar-input{
+            background: rgba(0, 0, 0, 0.2) !important;
+            color: #989697;
+            border-radius: 10px;
+            border: solid thin #989697;
+        }
+        .label-md{
+            margin-top: 0px;
+        }
+    }
+    .asx-col{
+        border: 0 !important;
+    }
+    .item-inner{
+    padding:0px!important;
+    }
+
+    .userlist{
+        .label-md{
+        margin-bottom: 0px !important;
+        margin-top: 0px; 
+        }
+    }
+    
+   .label-md{
+    margin-right: 0px !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+            .item-md{
+                background: rgba(0, 0, 0, 0.2) !important;
+                border-radius: 10px;
+                border: solid thin #989697;
+                color: #989697;
+                padding: 8px;
+            }
+        }
+    
+}
